@@ -5,5 +5,5 @@ Reassess e-mails that were previously classified as spam by spam detection softw
 ## Data file type: raw/binary R data
 
 # Work Summary
-1. Data munging. The data were e-mails in HTML format, which also contained UTF-8 characters. Converted this raw data into data frame by rigorously using regular expressions.
+1. Data munging. The raw data consisted of e-mails with UTF-8 characters. Converted this raw data into data frame by rigorously using regular expressions.
 2. Exploratory analysis to recommend spam classification criterion.
