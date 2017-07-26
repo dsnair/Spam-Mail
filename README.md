@@ -10,19 +10,19 @@ Reassess e-mails that were previously classified as spam by spam detection softw
 
 ## Data Munging Tasks
 
-Read in the e-mail data from the external Junkmail file and create a data frame with the following columns:
-eMailID (from 1 through n),
-fromEMail (note that some e-mails have more than one from field; one is fake),
-fromTrueName,
-date,
-dayOfWeek,
-time,
-subject. Some of these may be empty or missing.
-For each e-mail, create a list that consists of two components: The total spam points assigned by spamAssassin and a data frame with two columns: the first column contains the type of the spam indicator (such as “From: does not include a real name”) and the second column contain the score for this indicator (such as 0.8). The elements should be accessible via the same eMailID as used in part 1.
-For each e-mail, create a second list that consists of three components:
-The first one contains each row of the e-mail header as a separate string.
-The second one contains each row of the e-mail body as a separate string. Note that this may be html code.
-The third one is a single number that indicates the number of attachments to this e-mail. The elements should be accessible via the same eMailID as used in part 1.
+1. Read in the e-mail data from the external Junkmail file and create a data frame with the following columns:
+* eMailID (from 1 through n),
+* fromEMail (note that some e-mails have more than one from field; one is fake),
+* fromTrueName,
+* date,
+* dayOfWeek,
+* time,
+* subject. Some of these may be empty or missing.
+2. For each e-mail, create a list that consists of two components: The total spam points assigned by spamAssassin and a data frame with two columns: the first column contains the type of the spam indicator (such as “From: does not include a real name”) and the second column contain the score for this indicator (such as 0.8). The elements should be accessible via the same eMailID as used in part 1.
+3. For each e-mail, create a second list that consists of three components:
+* The first one contains each row of the e-mail header as a separate string.
+* The second one contains each row of the e-mail body as a separate string. Note that this may be html code.
+* The third one is a single number that indicates the number of attachments to this e-mail. The elements should be accessible via the same eMailID as used in part 1.
 
 ## Data Analysis Questions
 
